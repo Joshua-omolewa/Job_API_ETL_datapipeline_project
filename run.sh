@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#Created by Joshua Omolewa
+
 ### SETTING DATE FORMAT TO BE CONCATENATED  WITH LOG FILES ###
 log_date=$(date +"%d_%m_%Y_%H-%M-%S")
 ##########################################
