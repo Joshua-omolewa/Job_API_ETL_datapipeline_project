@@ -140,7 +140,7 @@ if __name__=='__main__':
         dataframes.append(pd.DataFrame(data))
 
     """
-    Concatenating the data frames in the li list, axis =1 is to concatenate data frames along the columns, 
+    Concatenating the data frames in the dataframes list, axis =1 is to concatenate data frames along the columns, 
     ignore_index= False is to  the use of  index values along the concatenation axis i.e. including the use default pandas axis along the 
     row and creating a new axis when combining files.
     """
@@ -164,7 +164,7 @@ if __name__=='__main__':
 
     s3.upload_file('job.csv', bucket, folder+'/job.csv')
 
-    print("File upload to S3 successful!") #Print success if file is successful
+    print("File upload to S3 successful!") #Print success if file upload is successful
 
 
 
