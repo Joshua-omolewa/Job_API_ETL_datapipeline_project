@@ -1,0 +1,5 @@
+#ignoring .env file containing secrets
+.env
+
+#ignoring virutal environment
+project_venv

@@ -1,0 +1,6 @@
+Start to run Python Script
+Traceback (most recent call last):
+  File "./run.py", line 42, in <module>
+    access_key=os.getenv('access_key') #accessing access id key stored in .env file loaded as environment variables
+NameError: name 'os' is not defined
+Script Failure

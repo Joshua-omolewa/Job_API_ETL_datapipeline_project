@@ -1,0 +1,8 @@
+[api]
+url = "https://www.themuse.com/api/public/jobs?page=50"
+
+[s3]
+BUCKET="josh-bucket-s31"
+FOLDER="CSV_projectfiles"
+
+

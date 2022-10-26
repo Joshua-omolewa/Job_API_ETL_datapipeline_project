@@ -1,0 +1,6 @@
+Start to run Python Script
+Traceback (most recent call last):
+  File "./run.py", line 38, in <module>
+    bucket = app_config['s3']['bucket']
+KeyError: 'bucket'
+Script Failure

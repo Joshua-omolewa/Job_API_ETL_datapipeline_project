@@ -1,0 +1,6 @@
+Start to run Python Script
+  File "./run.py", line 103
+    company_country ={"country":comp_location_country} hh # creating a dictionary for combining dataframe later
+                                                       ^
+SyntaxError: invalid syntax
+Script Failure
