@@ -32,7 +32,7 @@ The data required is gotten from API by querying jobs from the first 50 pages  h
 
 # 5. STEPS USED TO COMPLETE THIS PROJECT
 * Create Amazon AWS account, create Amazon elastic compute (EC2) instance and S3 bucket with directory to store transformed csv file
-<img src="https://github.com/Joshua-omolewa/Scraping_API_csvdata_to_S3_project/blob/main/img/final%20EC2%20S3.jpg"  width="50%" height="50%">
+<img src="https://github.com/Joshua-omolewa/Scraping_API_csvdata_to_S3_project/blob/main/img/final%20EC2%20S3.jpg"  width="100%" height="100%">
 * Execute python script from shell script to concatenate the data into one file
 * Save output file in the python script
 * Print out SUCCESS when runing shells script if all operations are completed successfuly.
