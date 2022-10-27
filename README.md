@@ -11,7 +11,7 @@ Download the data from API. Transformed data should include publication date, jo
 ## 3. Deliverable
 shell scripts, python script and job.csv to S3.
 
-Shell script: The shell script will control every operation, setting viitual environment, log setting, python script running.
+Shell script: The shell script will control every operation, setting virtual environment, log setting, python script running.
 
 Python script: The Python script is used to transform the data and upload dat to s3 bucket.
 
@@ -20,7 +20,9 @@ job.csv: The final transformed data file based on business requirement.
 ## 4. Specification Detail
 The data required gotten from API by querying for the first job from the first 50 pages  https://www.themuse.com/api/public/jobs?page=50
 
-## project Diagram
+## 5. Project Diagram
+
+![project image](https://github.com/Joshua-omolewa/Scraping_API_csvdata_to_S3_project/blob/main/img/Python_project.png)
 
 # 5. STEPS USED TO COMPLETE THIS PROJECT
 * Download data with shell script and automate log generation process
