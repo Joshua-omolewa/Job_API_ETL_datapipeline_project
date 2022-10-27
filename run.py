@@ -42,6 +42,7 @@ if __name__=='__main__':
     folder = app_config['s3']['FOLDER']
 
     #Importing secrets from .env file
+    load_dotenv()
     access_key=os.getenv('access_key') #accessing access id key stored in .env file loaded as environment variables
     secret_access_key=os.getenv('secret_access_key') #accessing secrete access key ic stored in .env file loaded as environment variables
 
