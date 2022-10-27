@@ -28,7 +28,7 @@ source project_venv/bin/activate  #activating virtual environment
 
 #Install dependencies for virtual environment
 pip install -r requirements.txt
-pip install geocoder # library use to get country name from from city
+pip install geopy # library use to get country name from from city
 
 deactivate #deactivating the virtual environment
 
