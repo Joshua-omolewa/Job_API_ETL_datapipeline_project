@@ -1,26 +1,26 @@
-# Scraping_API_csvdata_to_S3_project
-
-# PROJECT: Toronto climate data pipeline to combine climate data files using python and shell script
+# PROJECT: Data Pipeline that collects job data from API and transform data into csv file  based on business requirements and upload transformed data to Amazon S3 bucket
 
 # Author: 👤 **Joshua Omolewa**
 
 ## 1. Business Scenario
-Company requires data engineer to obtain Toronto climate data from Canadian Climate API and concatenate them into a single file and also generate log files for error tracking . To download the weather data manually, visit https://climate.weather.gc.ca/historical_data/search_historic_data_e.html.
+Data engineer is required to build a data pipeline on amazon EC2 that transform job data from API to a job.csv file for data analysis by data analyst and store transformed data in S3 and also generate log files for error tracking . API for job data  https://www.themuse.com/developers/api/v2
 
 ## 2. Business Requirements
-Download the data from Canadian Climate API. Concatenate the downloaded data files into one final csv file, called all_years.csv as ouput. Upload the scripts and final csv file all_years.csv to Github repository.
+Download the data from API. Transformed data should include publication date, job name, job type, job location (i.e city and country) &company name. Store data in S3 for use by data analyst
 
 ## 3. Deliverable
-Upload shell script, python script and all_years.csv to the github repository .
+shell scripts, python script and job.csv to S3.
 
-Shell script: The shell script will control every operation, including data downloading, log setting, python script running.
+Shell script: The shell script will control every operation, setting viitual environment, log setting, python script running.
 
-Python script: The Python script is used to concatenate all the data into one file.
+Python script: The Python script is used to transform the data and upload dat to s3 bucket.
 
-all_years.csv: The output file to be generated after concatenating the files.
+job.csv: The final transformed data file based on business requirement.
 
 ## 4. Specification Detail
-The data required is from Station ID = 48549. The year range of the data we want is from 2020 to 2022. We only want the data in February. The data will be downloaded in hourly format. The output file will be named as all_years.csv.
+The data required gotten from API by querying for the first job from the first 50 pages  https://www.themuse.com/api/public/jobs?page=50
+
+## project Diagram
 
 # 5. STEPS USED TO COMPLETE THIS PROJECT
 * Download data with shell script and automate log generation process
