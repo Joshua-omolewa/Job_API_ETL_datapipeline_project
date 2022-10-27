@@ -22,7 +22,7 @@ The data required is gotten from API by querying jobs from the first 50 pages  h
 
 ## 5. Project Architecture
 
-![project architecture](https://github.com/Joshua-omolewa/Scraping_API_csvdata_to_S3_project/blob/main/img/project%20architecture.jpg)
+![project architecture](https://github.com/Joshua-omolewa/AWS_API_csvdata_to_S3_project/blob/main/img/project%20architecture.jpg)
 
 
 ## 6. Project Diagram
@@ -32,16 +32,16 @@ The data required is gotten from API by querying jobs from the first 50 pages  h
 
 # 7. STEPS USED TO COMPLETE THIS PROJECT
 * Create Amazon AWS account and login into AWS console, create Amazon Elastic Compute Cloud (EC2) instance (Ubuntu) and S3 bucket with directory to store transformed csv file. Ensuring EC2 instance and S3 are in created in the same region. Ensure EC2 is attached to default amazon VPC and default subnet so EC2 can have access to internet through default Internet gateway
-<img src="https://github.com/Joshua-omolewa/Scraping_API_csvdata_to_S3_project/blob/main/img/final%20EC2%20S3.jpg"  width="100%" height="100%">
+<img src="https://github.com/Joshua-omolewa/AWS_API_csvdata_to_S3_project/blob/main/img/final%20EC2%20S3.jpg"  width="100%" height="100%">
 
 * SSH into EC2 instance (ensuring my ip is allowed to access instance through the security group) via VSCODE (using remote explorer) and create the project structure containing shell scripts (init.sh, run.sh), python scripts( run.py), .env file(to store access keys to my AWS console), .config.toml file (containing config files to access specific S3 bucket directory and to store API url), .gitignore to ignore specific files (.env and virtual environment folder created by runing init.sh),requirments.txt (containing all library dependencies required for the project)
-<img src="https://github.com/Joshua-omolewa/Scraping_API_csvdata_to_S3_project/blob/main/img/ssh.jpg"  width="100%" height="100%">
+<img src="https://github.com/Joshua-omolewa/AWS_API_csvdata_to_S3_project/blob/main/img/ssh.jpg"  width="100%" height="100%">
 
 * Write the code into the shell scripts (init.sh, run.sh). The init.sh installs required libaries,virtual environment, install the dependencies for the virtual environment from requirment.txt file & create a log folder. I then run the init.sh  using `./init.sh` as shown below to that creates virtual environment folder project_venv and log folder 
-<img src="https://github.com/Joshua-omolewa/Scraping_API_csvdata_to_S3_project/blob/main/img/init.sh.jpg"  width="100%" height="100%">
+<img src="https://github.com/Joshua-omolewa/AWS_API_csvdata_to_S3_project/blob/main/img/init.sh.jpg"  width="100%" height="100%">
 
 * Write the code for the python script `run.py` that will be intialized using `run.sh` shell script. The run.sh shell script will also create log files and print out if the python script was successfully executed or not. I run the run.sh script using `./run.sh` , the  python script(run.py) will send request to the API, store the payload, transform the payload to required data partitions based on business requirement, combine data partitions into a single file (job.csv) using pandas library and then job.csv to S3 bucket. The run.sh shell script will create log files each time it is executed and if succesful it print it as shown below
-
+<img src="https://github.com/Joshua-omolewa/AWS_API_csvdata_to_S3_project/blob/main/img/project%20complete.jpg"  width="100%" height="100%">
 
 * Print out SUCCESS when runing shells script if all operations are completed successfuly.
 * Upload files to the github repo using git.
