@@ -30,7 +30,7 @@ def read_country(city):
     return country
 
 
-### I used this website this wesite https://jsonformatter.curiousconcept.com/  to look into the json data hierarchy for so to effectiely target required data
+### I used this website https://jsonformatter.curiousconcept.com/  to look into the json data hierarchy to effectiely target required data
 
 if __name__=='__main__':
 
