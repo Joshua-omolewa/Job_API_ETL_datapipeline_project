@@ -43,25 +43,26 @@ The data required is gotten from API by querying jobs from the first 50 pages  h
 * Write the code for the python script `run.py` that will be intialized using `run.sh` shell script. The run.sh shell script will also create log files and print out if the python script was successfully executed or not. I run the run.sh script using `./run.sh` , the  python script(run.py) will send request to the API, store the payload, transform the payload to required data partitions based on business requirement, combine data partitions into a single file (job.csv) using pandas library and then job.csv to S3 bucket. The run.sh shell script will create log files each time it is executed and if succesful it print it as shown below
 <img src="https://github.com/Joshua-omolewa/AWS_API_csvdata_to_S3_project/blob/main/img/project%20complete.jpg"  width="100%" height="100%">
 
-* Print out SUCCESS when runing shells script if all operations are completed successfuly.
-* Upload files to the github repo using git.
-### Note: Pipeline can be automated using chronjob if needed
+* Checking Amazon S3 bucket to ensure the job.csv file has been successfuly uploaded and viewing a copy in Github repository
+<img src="https://github.com/Joshua-omolewa/AWS_API_csvdata_to_S3_project/blob/main/img/s3%20succesful%20upload.jpg"  width="100%" height="100%">
+
+
+
+### Note: (1) Pipeline can be automated using chronjob if needed (2)log folder contains all log files generated when working on the project
 
 ## PROJECT FILES
 
-* [SHELL SCRIPT](https://github.com/Joshua-omolewa/Climate_bash_python_project/blob/main/shell_script.sh)
+* [init.sh SCRIPT](https://github.com/Joshua-omolewa/AWS_API_csvdata_to_S3_project/blob/main/init.sh)
 
-* [PYTHON SCRIPT](https://github.com/Joshua-omolewa/Climate_bash_python_project/blob/main/python_script.py)
+* [run.sh SCRIPT](https://github.com/Joshua-omolewa/AWS_API_csvdata_to_S3_project/blob/main/run.sh)
 
-* [INPUT DATA FOLDER](https://github.com/Joshua-omolewa/Climate_bash_python_project/tree/main/input)
+* [run.py SCRIPT](https://github.com/Joshua-omolewa/AWS_API_csvdata_to_S3_project/blob/main/run.sh)
 
-* [OUPTUT DATA FOLDER](https://github.com/Joshua-omolewa/Climate_bash_python_project/tree/main/output)
+* [requirements.txt FILE](https://github.com/Joshua-omolewa/AWS_API_csvdata_to_S3_project/blob/main/requirements.txt)
 
-* [LOG FOLDER](https://github.com/Joshua-omolewa/Climate_bash_python_project/tree/main/logs)
+* [job.csv DATA FILE](https://github.com/Joshua-omolewa/AWS_API_csvdata_to_S3_project/blob/main/job.csv)
 
-## PROJECT BEING EXECUTED ON SHELL
-
-![FINAL SCRIPT IMAGE](https://github.com/Joshua-omolewa/Climate_bash_python_project/blob/main/img/Project%20completed.jpg)
+* [LOG FOLDER](https://github.com/Joshua-omolewa/AWS_API_csvdata_to_S3_project/tree/main/log)
 
 # Follow Me On
   
