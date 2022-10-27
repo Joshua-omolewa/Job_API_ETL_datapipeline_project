@@ -22,7 +22,7 @@ The data required is gotten from API by querying jobs from the first 50 pages  h
 
 ## 5. Project Architecture
 
-![project architecture](https://github.com/Joshua-omolewa/Scraping_API_csvdata_to_S3_project/blob/main/img/Architecture.jpg)
+![project architecture](https://github.com/Joshua-omolewa/Scraping_API_csvdata_to_S3_project/blob/main/img/project%20architecture.jpg)
 
 
 ## 5. Project Diagram
@@ -32,7 +32,7 @@ The data required is gotten from API by querying jobs from the first 50 pages  h
 
 # 5. STEPS USED TO COMPLETE THIS PROJECT
 * Create Amazon AWS account, create Amazon Elastic Compute Cloud (EC2) instance (Ubuntu) and S3 bucket with directory to store transformed csv file. Ensuring EC2 instance and S3 are in created in the same region. Ensure EC2 is attached to default amazon VPC and default subnet so EC2 can have access to internet through default Internet gateway
-<img src="https://github.com/Joshua-omolewa/Scraping_API_csvdata_to_S3_project/blob/main/img/project%20architecture.jpg"  width="100%" height="100%">
+<img src="https://github.com/Joshua-omolewa/Scraping_API_csvdata_to_S3_project/blob/main/img/final%20EC2%20S3.jpg"  width="100%" height="100%">
 
 * SSH into EC2 instance (ensuring my ip is allowed to access instance through the security group) via VSCODE (using remote explorer) and create the project structure containing shell scripts (init.sh, run.sh), python scripts( run.py), .env file(to store access keys to my AWS console), .config.toml file (containing config files to access specific S3 bucket directory and to store API url), .gitignore to ignore specific files (.env and virtual environment folder created by runing init.sh)
 <img src="https://github.com/Joshua-omolewa/Scraping_API_csvdata_to_S3_project/blob/main/img/ssh.jpg"  width="100%" height="100%">
