@@ -31,9 +31,12 @@ The data required is gotten from API by querying jobs from the first 50 pages  h
 ![project image](https://github.com/Joshua-omolewa/Scraping_API_csvdata_to_S3_project/blob/main/img/Python_project.png)
 
 # 5. STEPS USED TO COMPLETE THIS PROJECT
-* Create Amazon AWS account, create Amazon elastic compute (EC2) instance and S3 bucket with directory to store transformed csv file
-<img src="https://github.com/Joshua-omolewa/Scraping_API_csvdata_to_S3_project/blob/main/img/final%20EC2%20S3.jpg"  width="100%" height="100%">
-* Execute python script from shell script to concatenate the data into one file
+* Create Amazon AWS account, create Amazon Elastic Compute Cloud (EC2) instance (Ubuntu) and S3 bucket with directory to store transformed csv file. Ensuring EC2 instance and S3 are in created in the same region. Ensure EC2 is attached to default amazon VPC and default subnet so EC2 can have access to internet through default Internet gateway
+<img src="https://github.com/Joshua-omolewa/Scraping_API_csvdata_to_S3_project/blob/main/img/project%20architecture.jpg"  width="100%" height="100%">
+
+* SSH into EC2 instance (ensuring my ip is allowed to access instance through the security group) via VSCODE (using remote explorer) and create the project structure containing shell scripts (init.sh, run.sh), python scripts( run.py), .env file(to store access keys to my AWS console), .config.toml file (containing config files to access specific S3 bucket directory and to store API url), .gitignore to ignore specific files (.env and virtual environment folder created by runing init.sh)
+<img src="https://github.com/Joshua-omolewa/Scraping_API_csvdata_to_S3_project/blob/main/img/ssh.jpg"  width="100%" height="100%">
+
 * Save output file in the python script
 * Print out SUCCESS when runing shells script if all operations are completed successfuly.
 * Upload files to the github repo using git.
