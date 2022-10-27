@@ -18,14 +18,21 @@ Python script: The Python script is used to transform the data and upload dat to
 job.csv: The final transformed data file based on business requirement.
 
 ## 4. Specification Detail
-The data required gotten from API by querying for the first job from the first 50 pages  https://www.themuse.com/api/public/jobs?page=50
+The data required is gotten from API by querying jobs from the first 50 pages  https://www.themuse.com/api/public/jobs?page=50
+
+## 5. Project Architecture
+
+![project architecture](https://github.com/Joshua-omolewa/Scraping_API_csvdata_to_S3_project/blob/main/img/Architecture.jpg)
+
 
 ## 5. Project Diagram
-
+ The diagram shows the folder structure for the project and the how the shell scripts create virtual enviroment containing dependecies contained in the requirements.txt file. The run.sh shell script activates the virtual enviroment and run the run.py python script which connect to the API, transform the dat using pandas and then upload the transform job.csv file to S3 bucket for the data analyst
+ 
 ![project image](https://github.com/Joshua-omolewa/Scraping_API_csvdata_to_S3_project/blob/main/img/Python_project.png)
 
 # 5. STEPS USED TO COMPLETE THIS PROJECT
-* Download data with shell script and automate log generation process
+* Create Amazon AWS account, create Amazon elastic compute (EC2) instance and S3 bucket with directory to store transformed csv file
+<img src="https://github.com/Joshua-omolewa/Scraping_API_csvdata_to_S3_project/blob/main/img/final%20EC2%20S3.jpg"  width="60%" height="30%">
 * Execute python script from shell script to concatenate the data into one file
 * Save output file in the python script
 * Print out SUCCESS when runing shells script if all operations are completed successfuly.
