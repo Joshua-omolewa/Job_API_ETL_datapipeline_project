@@ -1,4 +1,4 @@
-# PROJECT: Data Pipeline that extracts job data from API and transform data into csv file  based on business requirements and load the transformed data to Amazon S3 bucket
+# PROJECT: Built an ETL Data Pipeline that extracts job data from API and transform data into csv file  based on business requirements and load the transformed data to Amazon S3 bucket
 
 # Author: 👤 **Joshua Omolewa**
 
