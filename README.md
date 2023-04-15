@@ -48,7 +48,7 @@ The data required is gotten from API by querying jobs from the first 50 pages  h
 
 
 
-### Note: (1) Pipeline can be automated using chronjob if needed (2)log folder contains all log files generated when working on the project
+### Note: (1) Pipeline can be automated using chronjob if needed (2) log folder contains all log files generated when working on the project
 
 ## PROJECT FILES
 
