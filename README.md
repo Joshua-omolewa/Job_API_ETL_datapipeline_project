@@ -1,4 +1,4 @@
-# PROJECT: Built an ETL Data Pipeline that extracts job data from API and transform data into csv file  based on business requirements and load the transformed data to Amazon S3 bucket
+# PROJECT: Built an ETL Data Pipeline that extracts job data from API and transform data into a single csv file  based on business requirements and then load the transformed data into Amazon S3 bucket
 
 # Author: 👤 **Joshua Omolewa**
 
@@ -8,7 +8,7 @@ Data engineer is required to build a data pipeline on amazon EC2 that transform 
 ## 2. Business Requirements
 Download the data from API. Transformed data should include publication date, job name, job type, job location (i.e city and country) &company name. Store data in S3 for use by data analyst
 
-## 3. Deliverable
+## 3. My Deliverable
 shell scripts, python script and job.csv to S3.
 
 Shell script: The shell script will control every operation, setting virtual environment, log setting, python script running.
